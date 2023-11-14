@@ -1,6 +1,6 @@
 +++
 title = 'Dime'
 date = 2023-11-14T11:38:14+01:00
-draft = true
+draft = false
 +++
-Hello dima !
+Hello dima ! test 2
