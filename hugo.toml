@@ -1,4 +1,4 @@
 baseURL = 'https://mehdi-mah.github.io/hetic_github_pages/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'fr-fr'
+title = 'Hugo Site - Mehdi Mahmoudi'
 theme = 'ananke'
