@@ -5,7 +5,7 @@ draft = false
 summary = "Résumé des concepts vus en cours"
 +++
 
-# Hugo
+![Logo hugo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_of_Hugo_the_static_website_generator.svg/512px-Logo_of_Hugo_the_static_website_generator.svg.png)
 
 ## Mes débuts avec Hugo
 
@@ -32,7 +32,7 @@ J'ai ensuite démarré le serveur de développement de Hugo pour pouvoir affiche
 ```
 hugo server
 ```
-Et pour inclure les drafts:
+Et également j'ai pu voir comment démarré le serveur tout en incluant les **drafts**:
 ```
 hugo server -D
 ```
@@ -41,13 +41,13 @@ hugo server -D
 ***Les nouvelles notions apprises de cette partie:***
 - ***Créer un nouveau contenu en ligne de commande avec Hugo***
 - ***Surcharger des templates***
-- ***Ajouter/Modifier du CSS du thème***
+- ***Ajouter/Modifier du CSS au thème choisi***
 
 Après avoir afficher mon site, j'ai créer mon premier contenu.
 ```
 hugo new content posts/firstPost.md
 ```
-Également, en suivant le cours (pdf) j'ai pu surcharger le template que j'avais choisi. J'ai donc modifié des parties spécifiques, le header et le footer du thème tout en ajouter ma propre feuille de style css.
+Également, en suivant le cours (pdf) j'ai pu **surcharger** le template que j'avais choisi. J'ai donc modifié des parties spécifiques, le header et le footer du thème tout en ajouter ma propre feuille de style css.
 - Surcharge du header + footer: créations des fichiers dans **layout/partials/** avec le même noms du fichier du thème pour le surcharger
 - Pour le css, même chose sauf qu'il faut créer le fichier dans static/css/ + ajouter un lien vers la feuille de style créer dans un nouveau fichier **layouts/partials/head-additions.html**
 

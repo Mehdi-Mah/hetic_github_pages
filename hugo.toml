@@ -2,3 +2,20 @@ baseURL = 'https://mehdi-mah.github.io/hetic_github_pages/'
 languageCode = 'fr-fr'
 title = 'Hugo Site - Mehdi Mahmoudi'
 theme = 'ananke'
+
+[params]
+
+site_logo="img/logo.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "firstPost"
+    name = "Post Python"
+    url = "/posts/secondpost/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "secondPost"
+    name = "Post Cours Hugo"
+    url = "/posts/firstpost/"
+    weight = 1

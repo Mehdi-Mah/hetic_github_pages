@@ -1,12 +1,31 @@
 <header class="cover bg-top">
     <div>
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <a href="./"><img class="logo" src="img/logo.png" alt="" style="width:150px;height:150px;"/></a>
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
             Projet Hugo
         </h1>
         <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
             Mehdi Mahmoudi
         </h2>
+        <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+          MT4
+      </h2>
+      <div class="menu">
+        {{ partial "i18nlist.html" . }}
+        {{ if .Site.Menus.main }}
+          <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+            {{ range .Site.Menus.main }}
+            <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+              <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        {{ partialCached "social-follow.html" . }}
+      </div>
       </div>
     </div>
 </header>
